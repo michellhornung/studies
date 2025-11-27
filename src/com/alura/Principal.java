@@ -1,35 +1,50 @@
-package com.alura;
+package JavaEspec.src.com.alura;
 
 public class Principal {
 
     public static void main(String[] args) {
-        Cachorro cachorro1 = new Cachorro();
-        cachorro1.nome = "Bob";
-        cachorro1.raca = "Boxer";
-        cachorro1.sexo = 'M';
-        cachorro1.idade = 2;
+        Pessoa eu = new Pessoa();
+        eu.nome = "Thiago Faria";
+        eu.cpf = "111.222.333-44";
+        eu.anoNascimento = 1981;
 
-        Cachorro cachorro2 = new Cachorro();
-        cachorro2.nome = "Zara";
-        cachorro2.raca = "Poodle";
-        cachorro2.sexo = 'F';
-        cachorro2.idade = 1;
+        Pessoa voce = new Pessoa();
+        voce.nome = "João das Couves";
+        voce.cpf = "999.999.999-99";
+        voce.anoNascimento = 1992;
 
-        System.out.println("CACHORRO 1");
-        System.out.println("--------");
-        System.out.printf("Nome: %s%n", cachorro1.nome);
-        System.out.printf("Raça: %s%n", cachorro1.raca);
-        System.out.printf("Sexo: %s%n", cachorro1.sexo);
-        System.out.printf("Idade: %d%n", cachorro1.idade);
+        Carro meuCarro = new Carro();
+        meuCarro.anoFabricacao = 2021;
+        meuCarro.cor = "Preto";
+        meuCarro.fabricante = "Honda";
+        meuCarro.modelo = "HR-V";
+        meuCarro.proprietario = eu;
+
+//        meuCarro.proprietario = new Pessoa();
+//        meuCarro.proprietario.nome = "Thiago Faria";
+//        meuCarro.proprietario.cpf = "111.222.333-44";
+//        meuCarro.proprietario.anoNascimento = 1981;
+
+        Carro seuCarro = new Carro();
+        seuCarro.anoFabricacao = 2022;
+        seuCarro.cor = "Branco";
+        seuCarro.fabricante = "BMW";
+        seuCarro.modelo = "X6";
+        seuCarro.proprietario = voce;
+
+        System.out.println("Meu carro");
+        System.out.println("---------");
+        System.out.printf("Modelo: %s%n", meuCarro.modelo);
+        System.out.printf("Ano: %d%n", meuCarro.anoFabricacao);
+        System.out.printf("Proprietário: %s%n", meuCarro.proprietario.nome);
 
         System.out.println();
 
-        System.out.println("CACHORRO 2");
-        System.out.println("--------");
-        System.out.printf("Nome: %s%n", cachorro2.nome);
-        System.out.printf("Raça: %s%n", cachorro2.raca);
-        System.out.printf("Sexo: %s%n", cachorro2.sexo);
-        System.out.printf("Idade: %d%n", cachorro2.idade);
+        System.out.println("Seu carro");
+        System.out.println("---------");
+        System.out.printf("Modelo: %s%n", seuCarro.modelo);
+        System.out.printf("Ano: %d%n", seuCarro.anoFabricacao);
+        System.out.printf("Proprietário: %s%n", seuCarro.proprietario.nome);
     }
 
 }
