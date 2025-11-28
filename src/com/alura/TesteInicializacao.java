@@ -1,19 +1,1 @@
-package JavaEspec.src.com.alura;
-
-public class TesteInicializacao {
-
-    static void main() {
-
-        Carro meuCarro = new Carro();
-        meuCarro.fabricante = "Fiat";
-        meuCarro.modelo = "Uno";
-        meuCarro.anoFabricacao = 2020;
-        System.out.println(meuCarro.fabricante);
-        System.out.println(meuCarro.modelo);
-        System.out.println(meuCarro.anoFabricacao);
-        System.out.println(meuCarro.proprietario.nome);
-
-
-
-    }
-}
+package JavaEspec.src.com.alura;public class TesteInicializacao {    static void main() {        Carro meuCarro = new Carro();        meuCarro.fabricante = "Fiat";        meuCarro.modelo = "Uno";        meuCarro.anoFabricacao = 2020;        System.out.println(meuCarro.fabricante);        System.out.println(meuCarro.modelo);        System.out.println(meuCarro.anoFabricacao);        System.out.println(meuCarro.proprietario.nome);    }}
